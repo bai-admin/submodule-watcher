@@ -1,0 +1,23 @@
+{
+  "name": "submodule-watcher",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpileOnly src/index.ts"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "plop": "^4.0.1",
+    "ts-morph": "^26.0.0",
+    "node-plop": "^0.32.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.0"
+  }
+}
